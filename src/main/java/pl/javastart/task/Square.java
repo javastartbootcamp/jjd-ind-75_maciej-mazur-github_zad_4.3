@@ -3,11 +3,15 @@ package pl.javastart.task;
 class Square {
     private double side;
 
-    public Square(double side) {
+    Square(double side) {
         this.side = side;
     }
 
-    public double getSide() {
+    double getSide() {
         return side;
+    }
+
+    double calculateSquareArea() {
+        return Math.pow(side, 2);
     }
 }

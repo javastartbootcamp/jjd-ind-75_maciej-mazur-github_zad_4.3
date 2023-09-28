@@ -5,21 +5,27 @@ class Triangle {
     private double segmentB;
     private double segmentC;
 
-    public Triangle(double segmentA, double segmentB, double segmentC) {
+    Triangle(double segmentA, double segmentB, double segmentC) {
         this.segmentA = segmentA;
         this.segmentB = segmentB;
         this.segmentC = segmentC;
     }
 
-    public double getSegmentA() {
+    double getSegmentA() {
         return segmentA;
     }
 
-    public double getSegmentB() {
+    double getSegmentB() {
         return segmentB;
     }
 
-    public double getSegmentC() {
+    double getSegmentC() {
         return segmentC;
+    }
+
+    double calculateTrianglePerimeter() {
+        return segmentA +
+                segmentB +
+                segmentC;
     }
 }

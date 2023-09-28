@@ -4,16 +4,20 @@ class Rectangle {
     private double sideA;
     private double sideB;
 
-    public Rectangle(double sideA, double sideB) {
+    Rectangle(double sideA, double sideB) {
         this.sideA = sideA;
         this.sideB = sideB;
     }
 
-    public double getSideA() {
+    double getSideA() {
         return sideA;
     }
 
-    public double getSideB() {
+    double getSideB() {
         return sideB;
+    }
+
+    double calculateRectPerimeter() {
+        return 2 * sideA + 2 * sideB;
     }
 }

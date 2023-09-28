@@ -5,11 +5,14 @@ import java.util.Locale;
 public class Main {
 
     public static void main(String[] args) {
-        ShapeCalculator shapeCalculator = new ShapeCalculator();
+        Circle circle = new Circle(5);
+        Rectangle rectangle = new Rectangle(5, 10);
+        Triangle triangle = new Triangle(3, 4, 5);
+        Square square = new Square(5);
 
-        System.out.printf(Locale.US,"%.2f%n", shapeCalculator.calculateCircleArea(new Circle(5)));
-        System.out.println(shapeCalculator.calculateRectPerimeter(new Rectangle(5, 10)));
-        System.out.println(shapeCalculator.calculateTrianglePerimeter(new Triangle(3, 4, 5)));
-        System.out.println(shapeCalculator.calculateSquareArea(new Square(5)));
+        System.out.printf(Locale.US,"%.2f%n", circle.calculateCircleArea());
+        System.out.println(rectangle.calculateRectPerimeter());
+        System.out.println(triangle.calculateTrianglePerimeter());
+        System.out.println(square.calculateSquareArea());
     }
 }

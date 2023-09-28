@@ -3,11 +3,15 @@ package pl.javastart.task;
 class Circle {
     private double radius;
 
-    public Circle(double radius) {
+    Circle(double radius) {
         this.radius = radius;
     }
 
-    public double getRadius() {
+    double getRadius() {
         return radius;
+    }
+
+    double calculateCircleArea() {
+        return Math.PI * Math.pow(radius, 2);
     }
 }
